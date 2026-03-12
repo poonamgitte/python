@@ -9,7 +9,6 @@ It demonstrates how to manage database schema changes, create migrations, and ap
 
 1. **Clone the repository** (if not already done):
 
-```bash
 git clone https://github.com/poonamgitte/python.git
 cd python/alembic_migration
 

@@ -1,0 +1,23 @@
+[2026-03-12T09:34:10.223+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-12T09:34:10.242+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bash_task_chain.task_c manual__2026-03-12T09:34:06.012224+00:00 [queued]>
+[2026-03-12T09:34:10.248+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bash_task_chain.task_c manual__2026-03-12T09:34:06.012224+00:00 [queued]>
+[2026-03-12T09:34:10.249+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-12T09:34:10.261+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): task_c> on 2026-03-12 09:34:06.012224+00:00
+[2026-03-12T09:34:10.266+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=123) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-03-12T09:34:10.269+0000] {standard_task_runner.py:63} INFO - Started process 128 to run task
+[2026-03-12T09:34:10.269+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'bash_task_chain', 'task_c', 'manual__2026-03-12T09:34:06.012224+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/bash_task_chain.py', '--cfg-path', '/tmp/tmp7i9sqshl']
+[2026-03-12T09:34:10.271+0000] {standard_task_runner.py:91} INFO - Job 8: Subtask task_c
+[2026-03-12T09:34:10.343+0000] {task_command.py:426} INFO - Running <TaskInstance: bash_task_chain.task_c manual__2026-03-12T09:34:06.012224+00:00 [running]> on host a3a124afdf58
+[2026-03-12T09:34:10.412+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bash_task_chain' AIRFLOW_CTX_TASK_ID='task_c' AIRFLOW_CTX_EXECUTION_DATE='2026-03-12T09:34:06.012224+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-12T09:34:06.012224+00:00'
+[2026-03-12T09:34:10.415+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-12T09:34:10.416+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-12T09:34:10.417+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "echo 'Task C running'"]
+[2026-03-12T09:34:10.426+0000] {subprocess.py:86} INFO - Output:
+[2026-03-12T09:34:10.428+0000] {subprocess.py:93} INFO - Task C running
+[2026-03-12T09:34:10.428+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-12T09:34:10.429+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-12T09:34:10.458+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=bash_task_chain, task_id=task_c, run_id=manual__2026-03-12T09:34:06.012224+00:00, execution_date=20260312T093406, start_date=20260312T093410, end_date=20260312T093410
+[2026-03-12T09:34:10.484+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-03-12T09:34:10.492+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
